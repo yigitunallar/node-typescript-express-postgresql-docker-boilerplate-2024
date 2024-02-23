@@ -1,11 +1,13 @@
 import express from 'express';
 import morgan from 'morgan';
+import db from './modules/db';
 
 const app = express();
 app.use(morgan('dev'));
 
 app.get('/', async (req, res) => {
-  res.json({ message: 'Hello World!' });
+  const users = await db.user.findMany();
+  res.json(users);
 });
 
 const port = Number(process.env.PORT || 3000);

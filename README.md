@@ -60,6 +60,12 @@ Before you begin, ensure you have installed the following on your development ma
      pnpm start
      ```
 
+     Run migrations locally:
+
+     ```
+     pnpm db:migrate
+     ```
+
    - **With Docker**
 
      Build and start the container:
@@ -74,9 +80,42 @@ Before you begin, ensure you have installed the following on your development ma
      pnpm watch
      ```
 
+     Run migrations inside docker:
+
+     ```
+     pnpm docker:db:migrate
+     ```
+
+     Rollback migrations inside docker:
+
+     ```
+     pnpm docker:db:migrate:undo
+     ```
+
+     Changes made to schema/codes/libs will require to run:
+
+     ```
+     pnpm rebuild:be
+     ```
+
+     Connect to the db inside docker:
+
+     ```
+     pnpm db:console
+     ```
+
+     Add seeds to the db:
+
+     ```
+     pnpm seed:dev
+     ```
+
      Debugging:
 
      Debugger listens on ws://0.0.0.0:9229 inside docker. Use 'debugger;' keyword inside your code to debug on 'VS Code Debug' tab.
+
+     Schema changes:
+     Make required changes to schema.prisma file.
 
 ## API Endpoints
 
