@@ -25,8 +25,8 @@ Before you begin, ensure you have installed the following on your development ma
 1. **Clone the repository**
 
    ```
-   git clone https://github.com/yourusername/yourprojectname.git
-   cd yourprojectname
+   git clone https://github.com/yigitunallar/nodejs-typescript-express-docker-boilerplate-2024.git
+   cd nodejs-typescript-express-docker-boilerplate-2024
    ```
 
 2. **Pin specific node version to the project**
