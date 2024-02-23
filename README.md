@@ -50,7 +50,7 @@ Before you begin, ensure you have installed the following on your development ma
 
    - **Development environment**
 
-     Run the application locally
+     Run the application locally:
 
      ```
      pnpm build
