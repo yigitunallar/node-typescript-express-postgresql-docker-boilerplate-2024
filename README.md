@@ -1,6 +1,6 @@
-# Node.js TypeScript Express Docker Boilerplate
+# Node.js TypeScript Express PostgreSQL Docker Boilerplate
 
-This boilerplate provides a starting point for building a Node.js application using TypeScript and Express, containerized with Docker. It includes basic setup for development and production environments.
+This boilerplate provides a starting point for building a Node.js application using TypeScript, Express and PostgreSQL, containerized with Docker. It includes basic setup for development and production environments.
 
 ## Features
 
@@ -15,6 +15,9 @@ Before you begin, ensure you have installed the following on your development ma
 - [Node.js](https://nodejs.org/) (version 20.x or later)
 - [Typescript](https://typescriptlang.org)
 - [Express](https://expressjs.com) (web framework for Node.js)
+- [PostgreSQL](https://www.postgresql.org/) (database)
+- [Prisma](https://www.prisma.io/) (ORM)
+- [Knex](https://knexjs.org/) (migrations)
 - [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/) (for containerization)
 - [Pnpm](https://pnpm.io/) (for managing dependencies)
 - [SWC](https://swc.rs) (for compiling and bundling)
